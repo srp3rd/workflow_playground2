@@ -25,6 +25,7 @@ jobs:
         VERSION=$(echo "$GIT_TAG" | sed 's#[^a-zA-Z0-9_.-]#-#g')
         echo "VERSION=$VERSION" >> $GITHUB_ENV
 
+
     - name: Echo the Docker tag name
       run: |
          echo "Docker image will be tagged as ${VERSION}"
