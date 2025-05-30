@@ -2,7 +2,7 @@ name: Build Rucio HermesK container
 on:
   push:
     tags:
-    - '*'
+    - '**'
   pull_request:
 
 env:
